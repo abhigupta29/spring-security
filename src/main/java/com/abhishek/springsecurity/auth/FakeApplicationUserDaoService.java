@@ -10,12 +10,12 @@ import java.util.Optional;
 import static com.abhishek.springsecurity.config.ApplicationUserRole.*;
 
 @Repository("fake")
-public class FakApplicationUserDaoService implements ApplicationUserDao {
+public class FakeApplicationUserDaoService implements ApplicationUserDao {
 
     private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public FakApplicationUserDaoService(PasswordEncoder passwordEncoder) {
+    public FakeApplicationUserDaoService(PasswordEncoder passwordEncoder) {
         this.passwordEncoder = passwordEncoder;
     }
 
